@@ -5,6 +5,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 header {
     flex:0 0 100%;
 }
@@ -16,6 +17,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    gap: 90%;
 }
 
 aside {
@@ -23,7 +25,7 @@ aside {
 }
 
 article {
-    flex: 0 0 70%;
+    flex: 0 0 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -46,6 +48,10 @@ form > div{
     flex-direction: column;
 }
 
+#bejelentkezes {
+    color: red;
+}
+
 @media screen and (max-width: 600px) {
     aside {
         flex: 0 0 100%;
@@ -65,6 +71,14 @@ form > div{
 
 /* index. html */
 
+.kepek {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+header > h1 {
+    border-bottom: 2px solid black;
+}
 
 
 /* artablazat.html */

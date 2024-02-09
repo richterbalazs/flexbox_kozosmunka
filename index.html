@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Közös munka</title>
+    <title>Közös munka - Utazási iroda</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
+        <h2>Ha még nincs felhasználói fiókja:</h2>
+        <br>
+        <div id="regisztracio">
+            <form >
+                <div>
+                    <label for="regnev">Felhasználónév:</label>
+                    <input type="text" id="regnev" name="regnev" placeholder="Felhasználónév">
+                </div>
+                <div>
+                    <label for="regpass">Jelszó:</label>
+                    <input type="password" id="regpass" name="regpass" placeholder="regpass">
+                </div>
+                <input type="submit" id="submit" name="submit" value="Belépés">
+            </form>
+        </div>
+        <h2>Ha már van felhasználói fiókja:</h2>
+        <br>
+        <div id="bejelentkezes">
+            <form >
+                <div>
+                    <label for="fnev">Felhasználónév:</label>
+                    <input type="text" id="fnev" name="fnev" placeholder="Felhasználónév">
+                </div>
+                <div>
+                    <label for="jelszo">Jelszó:</label>
+                    <input type="password" id="jelszo" name="jelszo" placeholder="jelszo">
+                </div>
+                <input type="submit" id="submit" name="submit" value="Belépés">
+            </form>
+        </div>
         <header>
             <h1>Számalk tours</h1>
         </header>
@@ -18,30 +48,22 @@
             </ul>
         </nav>
         <article>
+
             <div>
-                <form >
-                    <div>
-                        <label for="fnev">Felhasználónév:</label>
-                        <input type="text" id="fnev" name="fnev" placeholder="Felhasználónév">
-                    </div>
-                    <div>
-                        <label for="jelszo">Jelszó:</label>
-                        <input type="password" id="jelszo" name="jelszo" placeholder="jelszo">
-                    </div>
-                    <input type="submit" id="submit" name="submit" value="Belépés">
-                </form>
             </div>
+
             <div>
-                <h2>Firenze</h2>
+                <h2 class="utazascim">Firenze</h2>
                 <img class="kepek" src="kepek/Firenze.jpg" alt="Firenze kép.">
                 <p><span>Firenze, az olasz reneszánsz bölcsője, az opera szülőhelye, ma is egy műalkotás: Olaszország egyik legszebb városa értékes múzeumokkal, csodálatos utcákkal
                          és terekkel, káprázatos építészeti kincsekkel, de sokszor zsúfoltsággal és drága szállásokkal várja a látogatókat. Az alábbiakban bemutatjuk Firenze
                          legérdekesebb látnivalót. Kitérünk a repülőtéri bejutásokra, tömegközlekedési és parkolási információkra, valamint a Firenze környéki kirándulási
-                         lehetőségekre, valamint kiválogattuk a legjobb ár/érték arányú szállásokat is.</span></p>
+                         lehetőségekre, valamint kiválogattuk a legjobb ár/érték arányú szállásokat is. lore</span></p>
                 <input type="submit" id="submit" name="submit" value="Lefoglalás">
             </div>
+
             <div>
-                <h2>Milánó</h2>
+                <h2 class="utazascim">Milánó</h2>
                 <img class="kepek" src="kepek/Milánó.jpg" alt="Milánó kép.">
                 <p><span>Milánó Olaszország 2. legnagyobb, ugyanakkor legjelentősebb városa. Nem annyira olaszos atmoszférájú, mint pl. Róma vagy Firenze, azoknál modernebb.
                          De a városban van 1-2 jó látnivaló, és Milánóból könnyen és gyorsan elérhetők gyönyörű városok és szép tavak. Az alábbiakban bemutatjuk Milánó legjobb
@@ -51,7 +73,7 @@
             </div>
 
             <div>
-                <h2>Nápoly</h2>
+                <h2 class="utazascim">Nápoly</h2>
                 <img class="kepek" src="kepek/Nápoly.jpg" alt="Nápoly kép.">
                 <p><span>Nápoly, bár sokak számára kaotikus lehet, csodálatos és érdekes látnivalókat nyújt. És a környékén is lenyűgöző látványosságok vannak, mint pl. a Vezúv vagy
                          Pompeji, valamint csodás tengerpartok és szigetek is. Az alábbiakban részletesen, hasznos tippekkel mutatjuk be Nápoly és környéke érdekességeit. 
@@ -60,7 +82,7 @@
             </div>
 
             <div>
-                <h2>Róma</h2>
+                <h2 class="utazascim">Róma</h2>
                 <img class="kepek" src="kepek/Roma.jpg" alt="Róma kép.">
                 <p><span>A 2,9 milliós, hangulatos Róma, az egykori Római Birodalom bölcsője, a Vatikán otthona, csodás történelmi látnivalókkal, lenyűgöző templomokkal várja az 
                         utazókat. És a kiváló fagylaltokat és a legjobb kávékat se feledjük. Érdemes megkóstolni a helyi specialitásokat is, pl. a Rómából származó Pasta alla 
@@ -72,7 +94,7 @@
             </div>
 
             <div>
-                <h2>Velence</h2>
+                <h2 class="utazascim">Velence</h2>
                 <img class="kepek" src="kepek/Velence.jpg" alt="Velence kép.">
                 <p><span>A csodálatos, romantikus Velencében időutazást tehetünk - több száz éve nem nagyon változott a város, megtekinthetjük varázslatos épületeit, templomait,
                          csatornáit, sétálhatunk hangulatos sikátoraiban. Az alábbiakban, rövid bevezető után, bemutatjuk Velence fő nevezetességeit, aktuális belépőjegy árakkal
@@ -82,7 +104,7 @@
             </div>
 
             <div>
-                <h2>Madrid</h2>
+                <h2 class="utazascim">Madrid</h2>
                 <img class="kepek" src="kepek/Madrid.jpg" alt="Marid kép.">
                 <p><span>Madrid Spanyolország barátságos, élhető fővárosa. Remek éjszakai élete, számos kiváló múzeuma és sok szép parkja van. De annyi különleges látnivalója azért
                          nincs, mint Barcelonának. Az alábbiakban bemutatjuk Madrid legjobb látnivalóit, eljutással, belépőjegyekkel, nyitvatartással. Kitérünk a legjobb kirándulási
