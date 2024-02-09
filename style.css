@@ -2,3 +2,34 @@
     padding: 0;
     margin: 0;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header {
+    flex: 0 0 100%;
+}
+
+nav {
+    flex: 0 0 100%;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+}
+
+article {
+    flex: 0 0 70%;
+}
+
+aside {
+    flex: 0 0 30%;
+}
+
+footer {
+    flex: 0 0 100%;
+}
