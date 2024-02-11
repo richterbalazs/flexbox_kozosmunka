@@ -1,5 +1,14 @@
 /* mindkettonknek kell */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-image: url(kepek/hatter.jpg);*/
+    background-position: center;
+    background-size: cover;
+}
+
 main {
     display: flex;
     flex-direction: row;
@@ -43,13 +52,19 @@ article > div{
     flex: 0 0 calc(33% - 10px);
 }
 
-form > div{
+form > div {
     display: flex;
     flex-direction: column;
 }
 
-#bejelentkezes {
-    color: red;
+footer {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+header {
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
