@@ -4,15 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*background-image: url(kepek/hatter.jpg);*/
-    background-position: center;
-    background-size: cover;
 }
 
 main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /*background-image: url(kepek/hatter.jpg);
+    background-position: center;
+    background-size: cover;*/
 }
 
 header {
