@@ -18,23 +18,54 @@
             </ul>
         </nav>
         <article>
-            <!-- <h3>Véleményező űrlap</h3> -->
-            <h3>Kérjük, mondja el véleményét, ezzel segítve minket és támogatva az oldal fejlődését!</h3>
-            <form action="#" method="get">
-                <fieldset>
-                    <!-- kereten lévő szöveg -->
-                    <legend>Személyes adatok</legend>
-                    <input type="text" id="nev" name="" placeholder="Név" size="20">
-                    <input type="email" id="email" name="email" placeholder="Email-cím">
-                    <input type="password" id="password" name="" placeholder="Jelszó" value="" size="20">
-                    <label for="password"></label>
-                    <div>
-                        <input type="submit">
+            <div class="container">
+                <h3>Kérjük, mondja el véleményét, ezzel segítve minket és támogatva az oldal fejlődését!</h3><br>
+                    <div class="form-group">
+                        <label for="name">Név:</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    </fieldset><br>
-                    
-                </fieldset>
-            </form>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Értékelés:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">Válasszon értékelést...</option>
+                            <option value="5">5 - Kiváló</option>
+                            <option value="4">4 - Jó</option>
+                            <option value="3">3 - Közepes</option>
+                            <option value="2">2 - Gyenge</option>
+                            <option value="1">1 - Rossz</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Megjegyzés típusa:</label>
+                        <div class="container">
+                            <div class="form-group">
+                                <label>
+                                    <input type="radio" name="option" value="option1"> Opció 1
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="radio" name="option" value="option2"> Opció 2
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="radio" name="option" value="option3"> Opció 3
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Megjegyzés:</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Küldés</button>
+                </form>
+            </div>
         </article>
         <aside>
 
